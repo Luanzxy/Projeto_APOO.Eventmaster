@@ -4,19 +4,19 @@ Documentação do projeto desenvolvido como atividade da disciplina de Análise 
 
 ---
 
-## 📌 visão do produto
+## 📌 Visão do Produto
 
-### 🎯 objetivo
+### 🎯 Objetivo
 
 O sistema tem como objetivo facilitar o gerenciamento de eventos educacionais e culturais, automatizando processos como cadastro de eventos, inscrições de participantes, gestão de palestrantes e emissão de certificados digitais.
 
-### 👥 público-alvo
+### 👥 Público-alvo
 
 * instituições de ensino
 * organizações que promovem eventos, cursos e palestras
 * participantes de eventos
 
-### ⚙️ principais funcionalidades
+### ⚙️ Principais funcionalidades
 
 * cadastro de eventos (nome, data, local, descrição, capacidade)
 * cadastro de participantes
@@ -26,7 +26,7 @@ O sistema tem como objetivo facilitar o gerenciamento de eventos educacionais e 
 * envio de notificações por e-mail
 * geração de relatórios de presença e inscritos
 
-### 🔒 restrições e premissas
+### 🔒 Restrições e Premissas
 
 * aplicação web responsiva
 * envio de e-mails automático
@@ -52,7 +52,6 @@ descrição dos principais casos de uso do sistema:
 
 * **atores:** organizador
 * **fluxo principal:**
-
   1. acessa área de eventos
   2. insere nome, descrição, data, local e capacidade
   3. sistema salva o novo evento
@@ -61,7 +60,6 @@ descrição dos principais casos de uso do sistema:
 
 * **atores:** participante
 * **fluxo principal:**
-
   1. acessa página do evento
   2. preenche dados e confirma inscrição
   3. sistema registra a inscrição
@@ -85,20 +83,13 @@ o modelo conceitual descreve as entidades e relações principais do sistema.
 
 ### entidades principais:
 
-* **evento:** id\_evento, nome, descrição, data, local, capacidade
+* **evento:** id\_evento, nome, descrição, data_local, capacidade
 * **participante:** cpf, nome, email
 * **inscrição:** id\_inscricao, data\_inscricao, presença
 * **palestrante:** cpf, nome, email, mini\_curriculo
 * **certificado:** id\_certificado, data\_emissao, link\_certificado
 * **notificação:** id\_notificacao, tipo, data\_envio
 
-### relações:
-
-* Um evento tem muitas inscrições
-* Um participante pode ter muitas inscrições
-* Uma inscrição pode gerar um certificado
-* Notificações são enviadas para participantes e eventos
-* Eventos possuem palestrantes (relação n para n)
 
 ver imagem `modelo-conceitual.png` e arquivo `modelo-conceitual.md` para detalhes e descrição textual das classes.
 
