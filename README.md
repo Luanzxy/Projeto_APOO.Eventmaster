@@ -4,106 +4,106 @@ Documentação do projeto desenvolvido como atividade da disciplina de Análise 
 
 ---
 
-## 📌 Visão do Produto
+## Visão do Produto
 
-### 🎯 Objetivo
+### Objetivo
 
 O sistema tem como objetivo facilitar o gerenciamento de eventos educacionais e culturais, automatizando processos como cadastro de eventos, inscrições de participantes, gestão de palestrantes e emissão de certificados digitais.
 
-### 👥 Público-alvo
+### Público-alvo
 
-* instituições de ensino
-* organizações que promovem eventos, cursos e palestras
-* participantes de eventos
+* Instituições de ensino
+* Organizações que promovem eventos, cursos e palestras
+* Participantes de eventos
 
-### ⚙️ Principais funcionalidades
+### Principais funcionalidades
 
-* cadastro de eventos (nome, data, local, descrição, capacidade)
-* cadastro de participantes
-* controle de inscrições nos eventos
-* cadastro e gerenciamento de palestrantes
-* emissão de certificados digitais
-* envio de notificações por e-mail
-* geração de relatórios de presença e inscritos
+* Cadastro de eventos (nome, data, local, descrição, capacidade)
+* Cadastro de participantes
+* Controle de inscrições nos eventos
+* Cadastro e gerenciamento de palestrantes
+* Emissão de certificados digitais
+* Envio de notificações por e-mail
+* Geração de relatórios de presença e inscritos
 
-### 🔒 Restrições e Premissas
+### Restrições e Premissas
 
-* aplicação web responsiva
-* envio de e-mails automático
-* geração de certificados com link único
-* sistema baseado no estudo de caso da disciplina de banco de dados
-
----
-
-## 📚 casos de uso
-
-descrição dos principais casos de uso do sistema:
-
-### caso de uso 1: login
-
-* **atores:** usuários autorizados (admin, organizador)
-* **fluxo principal:**
-
-  1. usuário acessa o sistema
-  2. informa login e senha
-  3. sistema valida e concede acesso
-
-### caso de uso 2: cadastrar evento
-
-* **atores:** organizador
-* **fluxo principal:**
-  1. acessa área de eventos
-  2. insere nome, descrição, data, local e capacidade
-  3. sistema salva o novo evento
-
-### caso de uso 3: inscrever participante
-
-* **atores:** participante
-* **fluxo principal:**
-  1. acessa página do evento
-  2. preenche dados e confirma inscrição
-  3. sistema registra a inscrição
-
-### caso de uso 4: emitir certificados
-
-* **atores:** organizador
-* **fluxo principal:**
-
-  1. após o evento, acessa área de certificados
-  2. seleciona participantes presentes
-  3. sistema gera certificados e envia por e-mail
-
-para os diagramas, veja o arquivo `casos-de-uso.md`.
+* Aplicação web responsiva
+* Envio de e-mails automático
+* Geração de certificados com link único
+* Sistema baseado no estudo de caso da disciplina de banco de dados
 
 ---
 
-## 🧠 modelo conceitual
+## Casos de uso
 
-o modelo conceitual descreve as entidades e relações principais do sistema.
+Descrição dos principais casos de uso do sistema:
 
-### entidades principais:
+### Caso de uso 1: Login
 
-* **evento:** id\_evento, nome, descrição, data_local, capacidade
-* **participante:** cpf, nome, email
-* **inscrição:** id\_inscricao, data\_inscricao, presença
-* **palestrante:** cpf, nome, email, mini\_curriculo
-* **certificado:** id\_certificado, data\_emissao, link\_certificado
-* **notificação:** id\_notificacao, tipo, data\_envio
+* **Atores:** Usuários autorizados (admin, organizador)
+* **Fluxo principal:**
 
+  1. Usuário acessa o sistema
+  2. Informa login e senha
+  3. Sistema valida e concede acesso
 
-ver imagem `modelo-conceitual.png` e arquivo `modelo-conceitual.md` para detalhes e descrição textual das classes.
+### Caso de uso 2: Cadastrar Evento
+
+* **Atores:** Organizador
+* **Fluxo principal:**
+  1. Acessa área de eventos
+  2. Insere nome, descrição, data, local e capacidade
+  3. Sistema salva o novo evento
+
+### Caso de uso 3: Inscrever Participante
+
+* **Atores:** Participante
+* **Fluxo principal:**
+  1. Acessa página do evento
+  2. Preenche dados e confirma inscrição
+  3. Sistema registra a inscrição
+
+### Caso de uso 4: Emitir Certificados
+
+* **Atores:** Organizador
+* **Fluxo principal:**
+
+  1. Após o evento, acessa área de certificados
+  2. Seleciona participantes presentes
+  3. Sistema gera certificados e envia por e-mail
+
+Para os diagramas, veja o arquivo `diagrama-casos-de-uso.png`.
 
 ---
 
-## 🛠️ tecnologias utilizadas
+## Modelo conceitual
 
-* Github Codespaces para documentação com Markdown
-* Astah para diagramas
-* Github para fasdasdasdasd do repositório
+O modelo conceitual descreve as entidades e relações principais do sistema.
+
+### Entidades principais:
+
+* **Evento:** id\_evento, nome, descrição, data_local, capacidade
+* **Participante:** cpf, nome, email
+* **Inscrição:** id\_inscricao, data\_inscricao, presença
+* **Palestrante:** cpf, nome, email, mini\_curriculo
+* **Certificado:** id\_certificado, data\_emissao, link\_certificado
+* **Notificação:** id\_notificacao, tipo, data\_envio
+
+
+Ver imagem `modelo-conceitual.png` e arquivo `modelo-conceitual.md` para detalhes e descrição textual das classes.
 
 ---
 
-## 👨‍💻 equipe
+## Tecnologias utilizadas
+
+* Github Codespaces para a escrita da documentação em Markdown
+* Diagramas elaborados com Astah e Lucidchart
+* Repositório hospedado no GitHub
+
+---
+
+## Equipe
 
 | Nome                                     | Matrícula      |
 | ---------------------------------------- | -------------- |
